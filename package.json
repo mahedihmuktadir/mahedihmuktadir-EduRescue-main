@@ -1,0 +1,39 @@
+{
+  "name": "edurescue",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "eslint",
+    "seed": "node prisma/seed.js",
+    "prisma:seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "5.18.0",
+    "bcrypt": "5.1.1",
+    "bcryptjs": "^3.0.3",
+    "next": "14.2.3",
+    "next-auth": "4.24.5",
+    "prisma": "5.18.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "use-debounce": "^10.0.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.22",
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
